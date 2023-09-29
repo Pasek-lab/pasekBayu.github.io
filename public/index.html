@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-800 text-gray-500">
+    <header class="z-10 sticky top-0 bg-gray-950 py-5"> <!-- header -->
+      <nav class="w-9/12 flex flex-row mx-auto">
+        <div class=" uppercase text-lg basis-1/4"> <!-- logo -->
+          <a href="#hero">
+            <span class="font-extrabold text-white">Pasek</span>
+            <span class="font-extralight text-blue-400">Bayu</span>
+          </a> 
+        </div>
+        <div class="basis-1/2 flex items-center justify-evenly"> <!-- Link -->
+          <a href="#project"><span>project</span></a>
+          <a href="#contact"><span>contact</span></a>
+        </div>
+        <div class="basis-1/4 flex justify-end"> <!-- dark mode -->
+          <!-- tombol dark mode -->
+            <label for="darkModeToggle" class="cursor-pointer">
+              <span class="sr-only">Toggle Dark Mode</span>
+              <input type="checkbox" id="darkModeToggle" class="hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-yellow-400 dark:text-yellow-300">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 1v2m0 18v2m-8-9h2m18 0h2M4 12h2"/>
+              </svg>
+            </label>
+        </div>
+      </nav>
+    </header>
+
+    <main id="hero" class="relative -top-20"> <!-- Main Conten -->
+      <div class="bg-gray-950"> <!-- Hero Section -->
+        <div class=" mx-auto flex h-screen items-center w-9/12">
+          <div class="basis-1/2"> <!-- deskripsi -->
+            <div class="flex items-center">
+              <svg class="stroke-gray-400 stroke-2 h-5 w-5">
+                <line x1="0" y1="10px" x2="10px" y2="10px"/>
+              </svg>
+            <h2 class="uppercase text-xs font-extralight tracking-lebar">
+              my name is
+            </h2>
+            </div>
+            <h3 class="font-bold text-4xl text-white">
+              <span>Pasek</span>
+              <span class="text-blue-700">Bayu.</span>
+            </h3>
+            <p class="font-light">
+              "Saya adalah mahasiswa semester 3 di prodi Ilmu Komputer 
+              yang penuh semangat dan memiliki minat kuat dalam teknologi.
+              Selain itu, saya juga menikmati membaca komik dan aktif dalam organisasi HMJ Teknik Informatika."
+            </p>
+            <div class="flex flex-row mt-5 space-x-3">
+              <img class="w-6 h-6" src="img/Instagram.svg" alt="">
+              <img class="w-6 h-6" src="img/Github.svg" alt="">
+              <img class="w-6 h-6" src="img/Twitter.svg" alt="">
+              <img class="w-6 h-6" src="img/Linkedin.svg" alt="">
+            </div>
+          </div> <!-- avatar -->
+          <div class="basis-1/2">
+            <img class="mx-auto rounded-3xl" src="img/Neutral Pink Modern Circle Shape LinkedIn Profile Picture.png" alt="foto coba" width="250" height="250">
+          </div> 
+        </div>
+      </div>
+
+      <div id="project" class="bg-gray-800 py-40"> <!-- project -->
+        <div class="w-9/12 mx-auto">
+          <div class="flex flex-col"> <!-- judul -->
+            <div class="flex items-center">
+              <svg class="stroke-gray-400 stroke-2 h-5 w-5">
+                <line x1="0" y1="10px" x2="10px" y2="10px"/>
+              </svg>
+              <h2 class="uppercase text-xs font-extralight tracking-lebar">
+                my works
+              </h2>
+              </div>
+              <h3 class="text-3xl text-white">Project</h3>
+        </div>
+
+
+          <div class="grid grid-cols-4 gap-20 mt-20"> <!-- cards -->
+            <div class="rounded-lg shadow-lg overflow-hidden">
+              <img 
+                class="object-cover h-48 opacity-50"
+                src="img/figma.PNG" alt="">
+              <div class="bg-white py-2 px-4">
+                <h4 class="text-sm font-medium text-gray-800">Garyani</h4>
+                <h5 class="text-sm font-mono">Figma</h5>
+              </div>
+            </div>
+
+            <div class="rounded-lg shadow-lg overflow-hidden">
+              <img 
+                class="object-cover h-48 opacity-50"
+                src="img/BahasaC.PNG" alt="">
+              <div class="bg-white py-2 px-4">
+                <h4 class="text-sm font-medium text-gray-800">Program Weton</h4>
+                <h5 class="text-sm font-mono">Bahasa C</h5>
+              </div>
+            </div>
+
+            <div class="rounded-lg shadow-lg overflow-hidden">
+              <img 
+                class="object-cover h-48 opacity-50"
+                src="img/C++.PNG" alt="">
+              <div class="bg-white py-2 px-4">
+                <h4 class="text-sm font-medium text-gray-800">Binary Search</h4>
+                <h5 class="text-sm font-mono">Bahasa C++</h5>
+              </div>
+            </div>
+            <div class="rounded-lg shadow-lg overflow-hidden">
+              <img 
+                class="object-cover h-48 opacity-50"
+                src="img/Kalkulator.png" alt="">
+              <div class="bg-white py-2 px-4">
+                <h4 class="text-sm font-medium text-gray-800">App Kalkulator</h4>
+                <h5 class="text-sm font-mono">HTML, CSS, JS</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact" class="bg-white pt-40"> <!-- contact -->
+        <div class="mx-auto w-9/12 flex flex-row items-center">
+          <div class="basis-1/2">
+            <div class="flex flex-col"> <!-- judul -->
+              <div class="flex items-center">
+                <svg class="stroke-gray-400 stroke-2 h-5 w-5">
+                  <line x1="0" y1="10px" x2="10px" y2="10px"/>
+                </svg>
+                <h2 class="uppercase text-xs font-extralight tracking-lebar">
+                  Inquiry
+                </h2>
+                </div>
+                <h3 class="text-3xl text-gray-800">Contact Me</h3>
+            </div>
+
+            <form action="#" method="POST" class="max-w-md mt-10">
+              <div class="mb-4">
+                <label for="name" class="block text-gray-700 font-semibold">Name</label>
+                <input  class="bg-blue-100 rounded-md px-4 py-2 w-full focus:ring-blue-950" type="text"/>
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-semibold">Email</label>
+                <input  class="bg-blue-100 rounded-md px-4 py-2 w-full focus:ring-blue-950" type="email"/>
+              </div>
+              <div class="mb-4">
+                <label for="message" class="block text-gray-700 font-semibold">Message</label>
+                <textarea  class="bg-blue-100 rounded-md px-4 py-2 w-full focus:ring-blue-950" id="" cols="30" rows="4"></textarea>
+              </div>
+              <div>
+                <button class="hover:bg-blue-600 bg-blue-500 text-white font-semibold py-2 px-4 rounded-md w-full" type="submit">Send Email</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="basis-1/2 ml-10">
+            <div class="flex flex-row gap-5 p-5">
+              <div class="w-10 h-10 p-2 bg-blue-100 rounded-2xl">
+                <img class="w-full" src="img/pin.svg" alt="">
+              </div>
+              <div>
+                <h4 class="text-lg text-gray-800 font-medium">Address</h4>
+                <h5 class="font-thin">Jalan Sahadewa Rumah No.15e, Singaraja, Bali, Indonesia</h5>
+              </div>
+            </div>
+
+            <div class="flex flex-row gap-5 p-5">
+              <div class="w-10 h-10 p-2 bg-blue-100 rounded-2xl">
+                <img class="w-full" src="img/phone call.svg" alt="">
+              </div>
+              <div>
+                <h4 class="text-lg text-gray-800 font-medium">Phone Call</h4>
+                <h5 class="font-thin">(+62) 85737040814</h5>
+              </div>
+            </div>
+
+            <div class="flex flex-row gap-5 p-5">
+              <div class="w-10 h-10 p-2 bg-blue-100 rounded-2xl">
+                <img class="w-full" src="img/mail.svg" alt="">
+              </div>
+              <div>
+                <h4 class="text-lg text-gray-800 font-medium">E-Mail</h4>
+                <h5 class="font-thin">pasek.bayu@student.undiksha.ac.id</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-white text-center pt-10 pb-10 font-mono -mt-20"> <!-- footer -->
+      Pasek Bayu. All rights reserved
+    </footer>
+</body>
+</html>
